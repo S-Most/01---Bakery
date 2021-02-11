@@ -1,6 +1,183 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #faf3e6;
+}
+
+header {
+  width: calc(100% - (100vw - 100%));
+  position: fixed;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fdeac6;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+header nav a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a img {
+  height: 4rem;
+  padding: 0.5rem;
+}
+
+header nav a img:hover, header nav a img:focus {
+  opacity: 0.5;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+main .homeSection {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+
+main .homeSection:nth-child(1) {
+  margin-top: 5rem;
+}
+
+main .homeSection h2 {
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+main .homeSection p {
+  padding: 0 1rem;
+}
+
+main .team .teamLead h2,
+main .team .teamLead p {
+  text-align: center;
+  padding: 1rem;
+}
+
+main .team:nth-child(1) {
+  margin-top: 5rem;
+}
+
+main .team ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+main .team ul li {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+
+main .team ul li:nth-child(odd) {
+  background: #fdeac6;
+}
+
+main .team ul li .bakkers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+main .team ul li .bakkers img {
+  height: 8rem;
+  width: 8rem;
+  object-fit: cover;
+}
+
+main .team ul li .bakkers h5 {
+  text-align: center;
+  padding: 1rem;
+}
+
+main .team ul li .bakkersInfo {
+  margin: 2rem;
+}
+
+main .bestellen {
+  width: 80%;
+  margin: 6rem auto;
+}
+
+main .bestellen h2,
+main .bestellen p {
+  text-align: center;
+}
+
+main .bestellen h2 {
+  margin-bottom: 1rem;
+}
+
+main .bestellen form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+main .bestellen form input[type="number"] {
+  margin-bottom: 1rem;
+}
+
+main .bestellen form input[type="file"] {
+  margin-top: 0.5rem;
+}
+
+main .bestellen form button {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+main .contact {
+  width: 80%;
+  margin: 6rem auto 2rem auto;
+  display: flex;
+}
+
+main .contact .info {
+  height: calc(100vh - 8rem);
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-right: 4rem;
+}
+
+main .contact .info ul {
+  list-style: none;
+}
+
+main .contact .info ul li {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
